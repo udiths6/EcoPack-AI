@@ -1,0 +1,66 @@
+"material_id","material_name","strength","weight_capacity","cost","biodegradability_score","co2_score","recyclability_percentage"
+1,"Jute Fiber Packaging",3,20,5,8,3,85
+2,"PLA Bioplastic",3,18,6,6,5,60
+3,"Paper-Mold Composite",3,21,6,8,3,85
+4,"Tissue Paper Packaging",1,3,1,8,2,90
+5,"Bamboo Fiber Packaging",3,22,6,8,3,85
+6,"Seaweed Packaging",2,7,6,9,2,70
+7,"Areca Leaf Packaging",2,9,3,9,2,82
+8,"Recycled Aluminum",3,30,8,2,6,95
+9,"Paper Foam",2,14,5,7,4,75
+10,"Recycled HDPE",3,28,7,3,6,85
+11,"Corrugated Cardboard",2,15,4,7,4,85
+12,"Paper Shredding Fill",1,6,2,8,3,80
+13,"Foamed PLA",2,12,6,6,5,60
+14,"Honeycomb Paper",3,22,5,9,3,90
+15,"PLA-Paper Laminate",3,19,7,6,5,55
+16,"Sugarcane Bagasse",2,12,4,8,3,85
+17,"Biodegradable Air Pillow",1,4,5,7,4,40
+18,"Molded Pulp",3,20,5,9,2,95
+19,"Cork Packaging",2,10,5,8,3,75
+20,"Rice Husk Composite",3,18,6,7,4,70
+21,"Recycled Glass",3,35,7,1,6,90
+22,"Recycled Paperboard",2,14,3,8,3,88
+23,"Mushroom Packaging",2,10,6,9,2,80
+24,"Compostable Film",1,5,4,6,4,50
+25,"Kraft Paper",2,10,3,8,3,90
+26,"Biodegradable Paper Laminate",3,18,6,8,3,72
+27,"Hemp Fiber Packaging",3,22,6,9,3,88
+28,"Palm Leaf Packaging",2,10,4,9,2,80
+29,"Mycelium Foam Composite",3,15,7,9,2,78
+30,"Cornstarch Packaging",2,12,5,7,4,65
+31,"Cardboard Composite",3,24,5,7,4,82
+32,"Recycled PET",3,25,7,4,6,70
+33,"Recycled LDPE",2,20,6,3,6,80
+34,"Wheat Straw Packaging",2,11,4,8,3,78
+35,"Wood Wool Packaging",2,12,4,8,3,85
+36,"Wood Fiber Board",3,26,6,7,4,80
+37,"Banana Fiber Packaging",2,13,4,8,3,80
+38,"Thin Kraft Wrap",1,4,2,7,3,85
+39,"PHA Bioplastic",3,16,7,7,4,65
+40,"Cellulose Film",2,8,5,9,2,75
+41,"Recycled Corrugated Board",2,16,4,8,3,88
+42,"Thick Kraft Composite",3,23,6,7,4,80
+43,"Eco Cushion Paper",1,5,2,9,2,85
+44,"Lightweight Bamboo Sheet",2,14,5,8,3,82
+45,"Reinforced Bagasse Board",3,21,6,8,3,85
+46,"Natural Fiber Mesh",1,6,3,8,3,75
+47,"Starch-Based Foam",2,12,5,7,4,65
+48,"Recycled Polypropylene",3,26,7,3,7,85
+49,"Palm Fiber Composite",2,15,4,9,2,88
+50,"High-Density Paperboard",3,24,6,7,4,83
+51,"Hemp Composite Board",3,28,7,9,3,90
+52,"Compressed Wheat Panel",2,13,4,8,3,78
+53,"Low-Density Foam Sheet",1,4,2,6,4,60
+54,"Recycled Tin Sheet",3,30,8,2,8,92
+55,"Bio-Resin Paper Laminate",2,17,6,7,4,70
+56,"Cellulose Reinforced Film",1,7,3,9,2,75
+57,"Rigid Bamboo Panel",3,32,8,8,3,85
+58,"Eco Wood Fiber Slab",3,29,7,7,4,82
+59,"Compostable Cushion Wrap",1,6,3,9,2,80
+60,"Recycled Plastic Crate Material",3,35,9,3,8,90
+61,"Ultra Thin Paper Wrap",1,2,1,7,3,85
+62,"Premium Reinforced Biopolymer",3,40,10,6,7,75
+63,"Advanced Recycled Alloy Panel",3,38,9,2,8,95
+64,"Low-Grade Plastic Sheet",1,5,1,2,8,30
+65,"High-End Hemp Structural Board",3,34,10,9,3,92

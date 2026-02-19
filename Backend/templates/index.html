@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoPackAI – Sustainable Packaging Recommendation</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+
+
+<body class="bg-light">
+
+<div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center">
+
+    <!-- Header Section -->
+    <div class="text-center mb-4">
+        <h1 class="fw-bold text-primary">
+            EcoPack-AI - Sustainable Packaging Recommendation System
+        </h1>
+        <p class="text-muted">
+            Intelligent material selection powered by machine learning
+        </p>
+    </div>
+
+    <!-- Form Card -->
+    <div class="card shadow-lg p-5" style="max-width: 650px; width: 100%; border-radius: 15px;">
+
+        {% if error %}
+            <div class="alert alert-danger text-center">
+                {{ error }}
+            </div>
+        {% endif %}
+
+        <form method="POST" action="/recommend">
+
+            <!-- Product Category -->
+            <!--
+            <div class="mb-4">
+                <label class="form-label fw-semibold">Product Category</label>
+                <select class="form-select" name="product_category" required>
+                    <option value="" selected disabled>Select category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="food">Food</option>
+                    <option value="cosmetics">Cosmetics</option>
+                </select>
+            </div>
+            -->
+
+            <div class="mb-4">
+                <label class="form-label fw-semibold">Product Category</label>
+                <select class="form-select" name="product_category" id="product_category" required onchange="toggleOtherInput()">
+                    <option value="" selected disabled>Select category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="food">Food</option>
+                    <option value="cosmetics">Cosmetics</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Other Category Input (Hidden Initially) -->
+            <div class="mb-4 d-none" id="other_category_div">
+                <label class="form-label fw-semibold">Enter Product Category</label>
+                <input type="text" class="form-control" name="other_category" placeholder="Enter your category">
+            </div>
+
+            
+
+            <!-- Fragility -->
+            <div class="mb-4">
+                <label class="form-label fw-semibold">Fragility Level</label>
+                <select class="form-select" name="fragility" required>
+                    <option value="" selected disabled>Select fragility</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <!-- Shipping Type -->
+            <div class="mb-4">
+                <label class="form-label fw-semibold">Shipping Type</label>
+                <select class="form-select" name="shipping_type" required>
+                    <option value="" selected disabled>Select shipping type</option>
+                    <option value="domestic">Domestic</option>
+                    <option value="international">International</option>
+                </select>
+            </div>
+
+            <!-- Sustainability Priority -->
+            <div class="mb-4">
+                <label class="form-label fw-semibold">Sustainability Priority</label>
+                <select class="form-select" name="sustainability_priority" required>
+                    <option value="" selected disabled>Select priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg fw-semibold">
+                    Get Recommendation
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script>
+function toggleOtherInput() {
+    const category = document.getElementById("product_category").value;
+    const otherDiv = document.getElementById("other_category_div");
+
+    if (category === "other") {
+        otherDiv.classList.remove("d-none");
+    } else {
+        otherDiv.classList.add("d-none");
+    }
+}
+</script>
+
+</body>
+</html>
